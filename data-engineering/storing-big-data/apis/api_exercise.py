@@ -57,6 +57,8 @@ def get_weather(api_key, location_id):
         data = None
     return data
 
+json_data = get_weather(API_KEY, LOCATION_ID)
+
 def parse_accuweather_data(json_data):
     """Function to extract specific fields from the received
        AccuWeather response.  
