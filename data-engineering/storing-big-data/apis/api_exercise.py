@@ -57,7 +57,7 @@ def get_weather(api_key, location_id):
         data = None
     return data
 
-json_data = get_weather(API_KEY, LOCATION_ID)
+#json_data = get_weather(API_KEY, LOCATION_ID)
 
 def parse_accuweather_data(json_data):
     """Function to extract specific fields from the received
@@ -66,7 +66,7 @@ def parse_accuweather_data(json_data):
     Args:
         json_data (json object): The JSON data payload received from the AccuWeather API
     """
-    my_list = []
+    
     for dic in json_data:
          for key, value in dic.items():
             if key == "Temperature":
