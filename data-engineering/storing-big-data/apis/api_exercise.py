@@ -64,7 +64,14 @@ def parse_accuweather_data(json_data):
     Args:
         json_data (json object): The JSON data payload received from the AccuWeather API
     """
+    my_list = []
+    for dic in json_data:
+         for key, value in dic.items():
+            if key == "Temperature":
+                return value
+        
 
+        
     # =============================================================
     #                      Challenge Yourself
     # 
