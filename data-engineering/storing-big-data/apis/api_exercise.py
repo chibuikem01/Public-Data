@@ -63,7 +63,7 @@ def parse_accuweather_data(json_data):
     """Function to extract specific fields from the received
        AccuWeather response.  
 
-    Args:
+    Args:                  
         json_data (json object): The JSON data payload received from the AccuWeather API
     """
     
@@ -92,7 +92,7 @@ def main():
         print ("***API Call Successful! The Following data was received*** \n")
         print(response)
         print ("\n")
-        parse_accuweather_data(response)
+        print(parse_accuweather_data(response))
         print ("\n")
 
 if __name__ == "__main__":
